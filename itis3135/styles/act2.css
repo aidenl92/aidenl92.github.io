@@ -1,0 +1,45 @@
+h1{
+	text-align: center;
+	color: orange;
+}
+
+p{
+	text-align: right;
+	color: orange;
+}
+
+ul{
+	text-align: left;
+	color: orange;
+}
+
+h2{
+	text-align: justify;
+	color: orange;
+}
+
+figure{
+	text-align: center;
+}
+
+body{
+	background-color: green;
+}
+footer{
+	text-align: center;
+}
+figcaption{
+	color: yellow;
+}
+
+nav{
+	text-align: center;
+}
+
+body{
+	font-family: arial;
+}
+
+head{
+	font-family: arial;
+}
