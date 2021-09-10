@@ -20,7 +20,7 @@
 	
 	<main>
 		<h2>Activity 2 - HTML tables</h2>
-		<h3> My Tabular Data</h3>
+		<h3 class="left"> My Tabular Data</h3>
 		<ol>
 			<li>Fred Stone - fstone@aol.com -15</li>
 			<li>Hank Park - hpark12@gmail.com - 7</li>
@@ -28,12 +28,118 @@
 			<li>Rob Jackson - rjackson@gmail.com - 10</li>
 			<li>Melvin Smith - msmith@gmail.com - 6</li>
 			<li>Amy Thomson - amthomson@gmail.com - 12</li>
-			<li>Gary Stills - gstills@gmail.com - 14</li>
+			<li>Gary Stills - gstills@gmail.com - 21</li>
 		</ol>
 
 		<h3>Employee Data in Simple Table</h3>
-		<!-- TODO: create table with tr, th, and td elements -->
-		
+
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Years of Service</th>
+			</tr>
+			<tr>
+				<td>Fred Stone</td>
+				<td>fstone@aol.com</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td>Hank Park</td>
+				<td>hpark12@gmail.com</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>Percy Hall</td>
+				<td>perhall@yahoo.com</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>Rob Jackson</td>
+				<td>rjackson@gmail.com</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>Melvin Smith</td>
+				<td>msmith@gmail.com</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>Amy Thomson</td>
+				<td>amthomson@gmail.com</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>Gary Stills</td>
+				<td>gstills@gmail.com</td>
+				<td>21</td>
+			</tr>
+		</table>
+
+
+		<h3>Employee Data in Complex Table</h3>
+		<figure>
+		<table>
+			<tr>
+				<th></th>
+				<th id="n" headers="blank">Name</th>
+				<th id="e" headers="blank">Email</th>
+				<th id="y" headers="blank">Years of Service</th>
+				<th id="s" headers="blank">Monthly Salary</th>
+			</tr>
+			<tr>
+				<td rowspan="2" id="p1" headers="blank">Sales</td>
+				<td headers="p1 n1">Fred Stone</td>
+				<td headers="p1 e1">fstone@aol.com</td>
+				<td headers="p1 s1">15</td>
+				<td>$8.5k</td>
+			</tr>
+			<tr>
+				<td headers="p1 n2">Hank Park</td>
+				<td heders="p1 e2">hpark12@gmail.com</td>
+				<td headers="p1 ">7</td>
+				<td>$8.5k</td>
+			</tr>
+			<tr>
+				<td rowspan="3" id="p2" headers="blank">Marketing</td>
+				<td headers="p2 n1">Percy Hall</td>
+				<td headers="p2 e1">perhall@yahoo.com</td>
+				<td headers="p2 y1">5</td>
+				<td headers="p2 s1">$9k</td>
+			</tr>
+			<tr>
+				<td headers="p2 n2">Rob Jackson</td>
+				<td headers="p2 e2">rjackson@gmail.com</td>
+				<td headers="p2 y2">10</td>
+				<td headers="p2 s2">$9k</td>
+			</tr>
+			<tr>
+				<td headers="p2 n3">Melvin Smith</td>
+				<td headers="p2 e3">msmith@gmail.com</td>
+				<td headers="p2 y3">6</td>
+				<td headers="p2 s3">$9.5k</td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="p3" headers="blank">Management</td>
+				<td headers="p3 n1">Amy Thomson</td>
+				<td headers="p3 e1">amthomson@gmail.com</td>
+				<td headers="p3 y1">12</td>
+				<td headers="p3 s1">$10k</td>
+			</tr>
+			<tr>
+				<td headers="p3 n2">Gary Stills</td>
+				<td headeers="p3 e2">gstills@gmail.com</td>
+				<td headers="p3 y2">21</td>
+				<td headers="p3 s2">$10k</td>
+			</tr>
+			<tr>
+				<th colspan="3" id="total" headers="blank"> Total years of Service</th>
+				<td headers="total years">76</td>
+				<td headers="total sal">$64.5k</td>
+			</tr>
+		</table>
+		<figcaption>Table of current employees, positions, salaries, email info, and years of service</figcaption>
+		</figure>
 	</main>
 	
 	<footer>
@@ -59,4 +165,5 @@
 		
 	</footer>
 
-</body></html>
+</body>
+</html>
