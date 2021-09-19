@@ -13,6 +13,18 @@
 .right{
 	text-align: right;
 }
+
+.body-text{
+	margin-left: 200px;
+}
+
+.p-margin{
+	margin-right: 800px;
+}
+
+#footer-nav{
+	margin-top: 50px;
+}
 #sales,#mark,#mang, #totals{
 	background-color: darkslategrey;
 }
@@ -46,7 +58,6 @@ ul{
 }
 
 h2{
-	text-align: justify;
 	color: orange;
 }
 
@@ -83,10 +94,6 @@ th,td{
 	border: 1px solid black;
 }
 
-h3{
-	text-align: center;
-}
-
 table tr:nth-child(even){
 	background-color: grey;
 }
@@ -103,4 +110,9 @@ button{
 	color: lightblue;
 }
 
-
+a:link{
+	color: #91DD17;
+}
+a:visited{
+	color: #EEE25B;
+}
