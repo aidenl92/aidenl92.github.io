@@ -42,10 +42,29 @@
 	text-align: center;
 	display: block;
 	margin-top: 50px;
-	
-	
 }
 
+#calc-display
+{
+	text-align: right;
+	border:2px;
+	border-style: solid;
+	border-color:black;
+	margin-right: 600px;
+	margin-left: 600px;
+	background-color: cyan;
+	color: black;
+}
+.calc-container
+{
+	align-content: center;
+	margin: 0px 500px 0px 500px;
+	display: grid;
+	width: 50%;
+	grid-gap: 2px;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
 #footer-nav{
 	margin-top: 50px;
