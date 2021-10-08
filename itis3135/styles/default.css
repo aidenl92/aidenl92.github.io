@@ -35,7 +35,10 @@
 }
 .head-floatr{
 	color:orange;
+}
 
+.float-right{
+	float:right;
 }
 
 .inline-buttons{
@@ -63,7 +66,11 @@
 	width: 50%;
 	grid-gap: 2px;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.calc-button{
+	padding: 15px 5px;
+	font-size: 20px;
 }
 
 #footer-nav{
