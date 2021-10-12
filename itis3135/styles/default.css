@@ -1,5 +1,6 @@
 :root{
 	font-family: arial;
+
 }
 
 .left{
@@ -24,6 +25,10 @@
 
 .p-margin{
 	margin-right: 800px;
+}
+
+.yellow{
+	color: #F4F45F;
 }
 
 .small-logo{
@@ -71,6 +76,11 @@
 .calc-button{
 	padding: 15px 5px;
 	font-size: 20px;
+}
+
+.forms-margin{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #footer-nav{
@@ -131,7 +141,7 @@ nav{
 }
 
 main{
-	color: coral;
+	color: orange;
 }
 
 table{
@@ -143,6 +153,7 @@ table{
 
 th,td{
 	border: 1px solid black;
+	padding: 5px;
 }
 
 table tr:nth-child(even){
@@ -150,7 +161,8 @@ table tr:nth-child(even){
 }
 
 table tr:nth-child(odd){
-	background-color: white;
+	background-color: #DFE6FF;
+	color: #9C7606;
 }
 table tr:nth-child(1){
 	background-color: black;

@@ -2,7 +2,7 @@
 var result = "";
 var firstOp = true;
 var newNumInput = true;
-var $ = function(elemId){
+var $ = function(elemId) {
     return document.getElementById(elemId);
 }
 var num1;
@@ -99,3 +99,6 @@ function equalsButton(){
     firstOp = true;
     newNumInput = true;
 }
+
+console.log(currOp);
+console.log(newNumInput);
