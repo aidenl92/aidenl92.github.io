@@ -11,6 +11,11 @@
 	text-align: center;
 }
 
+.center-page{
+	text-align: center;
+	margin-right: 200px;
+}
+
 .right{
 	text-align: right;
 }
@@ -23,6 +28,10 @@
 	margin-left: 200px;
 }
 
+.main-margin{
+	margin-left: 200px;
+}
+
 .p-margin{
 	margin-right: 800px;
 }
@@ -31,13 +40,19 @@
 	color: #F4F45F;
 }
 
+/*h3 heading font size*/
+.const-heading{
+	font-size: 1.17em;
+	font-weight: bold;
+}
+
 .small-logo{
 	margin-left:500px;
 	margin-right: 50px;
 	display:block;
 	float:left;
-	
 }
+
 .head-floatr{
 	color:orange;
 }
@@ -81,6 +96,12 @@
 .forms-margin{
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+figure.fig-center{
+	text-align: center;
+	align-content: center;
+	margin: auto;
 }
 
 #footer-nav{
@@ -127,7 +148,7 @@ figure{
 }
 
 body{
-	background-color: dimgray;
+	background-color: #504f4f;
 }
 footer{
 	text-align: center;
