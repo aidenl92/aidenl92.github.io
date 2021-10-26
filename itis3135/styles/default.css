@@ -43,6 +43,10 @@
 	margin-right: 800px;
 }
 
+.body-margins{
+	margin: 10px 400px 0px 200px;
+}
+
 .yellow{
 	color: #F4F45F;
 }
@@ -171,7 +175,7 @@ figure{
 }
 
 body{
-	background-color: #504f4f;
+	background-color: #373737;
 }
 footer{
 	text-align: center;
