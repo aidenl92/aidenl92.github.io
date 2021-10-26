@@ -16,6 +16,13 @@
 	margin-right: 200px;
 }
 
+.center-border{
+	text-align: center;
+	border:2px;
+	border-style: solid;
+	border-color:black;
+}
+
 .right{
 	text-align: right;
 }
@@ -67,6 +74,8 @@
 	margin-top: 50px;
 }
 
+
+
 #calc-display
 {
 	text-align: right;
@@ -97,6 +106,20 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+.image-container{
+	text-align: center;
+	width: 640px;
+	height: 600px;
+	margin: auto;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+
 
 figure.fig-center{
 	text-align: center;
