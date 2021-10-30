@@ -1,0 +1,27 @@
+body{
+	font-family: Arial;
+	color: white;
+	background-color: #1e6130;
+	margin: 10px 400px 0px 200px;
+}
+
+header{
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+	display: block;
+}
+
+footer a{
+	margin: auto;
+	text-decoration: none;
+}
+
+a:link{
+	color: #d4db04;
+}
+a:visited{
+	color: #05dde8;
+}

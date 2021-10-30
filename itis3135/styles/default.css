@@ -221,6 +221,10 @@ button{
 	color: lightblue;
 }
 
+footer a{
+	text-decoration: none;
+}
+
 a:link{
 	color: #91DD17;
 }
