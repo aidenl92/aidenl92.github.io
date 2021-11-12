@@ -1,0 +1,98 @@
+/*default css for project pages*/
+
+body {
+	font-family: Helvetica;
+	font-size: 15px;
+	color: #9FE1F4;
+	background-color: #06410D;
+}
+
+a:link{
+	color: #F4F80D;
+}
+
+a:visited{
+	color: #E99595;
+}
+
+h1{
+	text-align: center;
+}
+
+.nav-bar{
+	text-align: center;
+	font-size: 16px;
+	position: relative;
+	right: 50px;
+
+}
+
+.nav-bar a{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.center{
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+	
+}
+
+footer a{
+	margin: 5px 15px 5px 15px;
+	text-decoration: none;
+}
+
+.pod-placeholder{
+	height: 500px;
+	width: auto;
+}
+
+.main-margin{
+	margin-left: 200px;
+}
+
+.p-margin{
+	margin-right: 800px;
+	margin-bottom: 50px;
+}
+
+p{
+	font-size: 17px;
+}
+
+table{
+	text-align: center;
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin-right: 500px;
+	margin-left: auto;
+	
+}
+
+table td:nth-child(3){
+	white-space: nowrap;
+	
+}
+
+
+th{
+	font-size: 20px;
+}
+
+td{
+	font-size: 17px;
+}
+
+th,td{
+	border: 2px solid black;
+	padding: 5px;
+}
+
+table img{
+	width: 300px;
+	height: auto;
+}
