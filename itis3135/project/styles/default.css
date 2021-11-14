@@ -24,7 +24,10 @@ h1{
 	font-size: 16px;
 	position: relative;
 	right: 50px;
+}
 
+.pod-figure{
+	margin-right: 200px;
 }
 
 .nav-bar a{
@@ -36,9 +39,9 @@ h1{
 	text-align: center;
 }
 
+
 footer{
 	text-align: center;
-	
 }
 
 footer a{
@@ -49,6 +52,7 @@ footer a{
 .pod-placeholder{
 	height: 500px;
 	width: auto;
+	
 }
 
 .main-margin{
@@ -70,14 +74,11 @@ table{
 	table-layout: fixed;
 	margin-right: 500px;
 	margin-left: auto;
-	
 }
 
 table td:nth-child(3){
 	white-space: nowrap;
-	
 }
-
 
 th{
 	font-size: 20px;
