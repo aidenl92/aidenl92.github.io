@@ -35,6 +35,37 @@ h1{
 	margin-right: 50px;
 }
 
+.dgcourse-div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	margin-bottom: 150px;
+}
+
+.dgc-header{
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.dgcourse-div p{
+	margin: 75px 200px 5px 0px;
+}
+
+.quiz-form button{
+	margin-top: 50px;
+}
+
+.quiz-form p{
+	margin-top: 50px;
+}
+
+.quiz-form input{
+	margin: 10px 0px 10px 0px;
+}
+
 .center{
 	text-align: center;
 }
