@@ -11,10 +11,10 @@ $(document).ready(function() {
         },
         dataType: "json",
         success: function(data) {
-            $("#team").empty();
             $.getJSON("team.json" , function(data){
                $.each(data,function(){
                    $.each(this, function(key, value){
+                       $('#team').empty();
                        $('#team').html(
                            "<h3>"+ value.name + "</h3>" +
                            value.title +"<br>"+
