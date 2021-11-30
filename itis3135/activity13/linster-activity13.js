@@ -9,12 +9,12 @@ $(document).ready(function() {
         error: function(xhr, status, error) {
             alert("Error: " + xhr.status + " - " + error);
         },
+        $('#team').emtpy();
         dataType: "json",
         success: function(data) {
             $.getJSON("team.json" , function(data){
                $.each(data,function(){
                    $.each(this, function(key, value){
-                       $('#team').empty();
                        $('#team').html(
                            "<h3>"+ value.name + "</h3>" +
                            value.title +"<br>"+
