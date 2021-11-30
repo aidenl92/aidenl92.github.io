@@ -15,7 +15,7 @@ $(document).ready(function() {
                $.each(data,function(){
                    $.each(this, function(key, value){
                        $('#team').append(
-                           "<h3>"+ value.name + "</h3><br>"+
+                           "<h3>"+ value.name + "</h3>" +
                            value.title +"<br>"+
                            value.bio + "<br>"
                        );
