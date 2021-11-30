@@ -11,6 +11,7 @@ $(document).ready(function() {
         },
         dataType: "json",
         success: function(data) {
+            $("#team").empty();
             $.getJSON("team.json" , function(data){
                $.each(data,function(){
                    $.each(this, function(key, value){
