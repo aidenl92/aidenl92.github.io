@@ -9,13 +9,13 @@ $(document).ready(function() {
         error: function(xhr, status, error) {
             alert("Error: " + xhr.status + " - " + error);
         },
-        $('#team').emtpy();
         dataType: "json",
         success: function(data) {
+            $.('#team').html('');
             $.getJSON("team.json" , function(data){
                $.each(data,function(){
                    $.each(this, function(key, value){
-                       $('#team').html(
+                       $('#team').append(
                            "<h3>"+ value.name + "</h3>" +
                            value.title +"<br>"+
                            value.bio + "<br>"
