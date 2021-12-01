@@ -23,7 +23,7 @@ $(document).ready(function() {
 							);
 						});
 					});
-				}); //end success function
+				} //end success function
         }); //end toobin ajax
     }); //end toobin click
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
 			url: "json_files/sorkin.json",
 			success: function(data){
 				getSpeakerInfo(data,selectedSpeaker,imgAlt);
-			});
+			}
 		});
 	
     }); //end sorkin click
