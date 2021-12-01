@@ -1,18 +1,17 @@
 $(document).ready(function() {
 
 	var selectedSpeaker = "";
-	var imgAlt = "";
+	var imgAlt = "img alt";
 
-	$('#toobin').click(function(){
-		selectedSpeaker = "toobin";
-		imgAlt = "toobin_court";
-        $.ajax({
-            type: "get",
-            url: "json_files/toobin.json",
-			dataType:"json",
-            success: function(data){
-				$("main").html('');
-				$.getJSON("toobin.json", function(data){
+	$("#nav-list ul li a").click(function(){
+		selectedSpeaker = this.attr(title);
+		$.ajax({
+			type: "get",
+			url: "json_files/"+ selectedSpeaker + ".json",
+			dataType: "json",
+			success: function(data){
+				$("#main").html('');
+				$.getJSON(selectedSpeaker + ".json", function(data){
 					$.each(data,function(){
 						$.each(this, function(key, val){
 							$("main").append(
@@ -26,33 +25,13 @@ $(document).ready(function() {
 					});
 				});
 			}
-		}); //end toobin ajax
-	});//end toobin click
-
-    $('#sorkin').click(function(){
-		selectedSpeaker = "sorkin";
-		imgAlt = "sorkin_desk";
-		$.ajax({
-			type: "get",
-			url: "json_files/sorkin.json",
-			dataType: "json",
-			success: function(data){
-				getSpeakerInfo(data,selectedSpeaker,imgAlt);
-			}
 		});
-	
-    }); //end sorkin click
-
-    $('#chua').click(function(){
-		console.log("chua click");
-    }); //end chua click
-
-    $('#sampson').click(function(){
-		console.log("sampson click");
-    }); //end sampson click
+	});
 	
 	
-	function getSpeakerInfo(data,speaker,imgAlt){
+}); // end ready
+ /*
+function getSpeakerInfo(data,speaker,imgAlt){
 	$("main").html("");
 	$.getJSON(speaker +".json", function(data){
 		$.each(data,function(){
@@ -65,6 +44,4 @@ $(document).ready(function() {
 			});
 		});
 	});
-}
-}); // end ready
-
+*/
