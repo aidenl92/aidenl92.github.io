@@ -50,9 +50,9 @@ $(document).ready(function() {
     $('#sampson').click(function(){
 
     }); //end sampson click
-}); // end ready
-
-function getSpeakerInfo(data,speaker,imgAlt){
+	
+	
+	function getSpeakerInfo(data,speaker,imgAlt){
 	$("main").html("");
 	$.getJSON(speaker +".json", function(data){
 		$.each(data,function(){
@@ -66,3 +66,5 @@ function getSpeakerInfo(data,speaker,imgAlt){
 		});
 	});
 }
+}); // end ready
+
