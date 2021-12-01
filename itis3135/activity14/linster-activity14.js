@@ -33,18 +33,3 @@ $(document).ready(function() {
 	
 	console.log("js loaded");
 }); // end ready
- /*
-function getSpeakerInfo(data,speaker,imgAlt){
-	$("main").html("");
-	$.getJSON(speaker +".json", function(data){
-		$.each(data,function(){
-			$.each(this,function(key,val){
-				"<h1>" + val.title + "</h1>"+
-				"<h2>" + val.month + "</h2>"+
-				"<h3>" + val.name + "</h3>"+
-				"<img src='"+ val.image +"' alt='"+ imgAlt+"'>"+
-				"<p>"+ val.text + "</p>"
-			});
-		});
-	}); //
-*/
