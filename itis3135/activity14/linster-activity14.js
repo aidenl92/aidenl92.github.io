@@ -19,7 +19,7 @@ $(document).ready(function() {
 								"<h1>" + val.title + "</h1>"+
 								"<h2>" + val.month + "</h2>"+
 								"<h3>" + val.name + "</h3>"+
-								"<img src='"+ val.image +"' alt='"+ imgAlt+"'>"+
+								'<img src="'+ val.image +'" alt="'+ imgAlt+'">'+
 								"<p>"+ val.text + "</p>"
 							);
 						});
