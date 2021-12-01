@@ -11,11 +11,11 @@ $(document).ready(function() {
             url: "json_files/toobin.json",
 			dataType:"json",
             success: function(data){
-				$('main').html('');
-				$.getJSON('toobin.json', function(data){
+				$("main").html('');
+				$.getJSON("toobin.json", function(data){
 					$.each(data,function(){
 						$.each(this, function(key, val){
-							$('main').append(
+							$("main").append(
 								"<h1>" + val.title + "</h1>"+
 								"<h2>" + val.month + "</h2>"+
 								"<h3>" + val.name + "</h3>"+
