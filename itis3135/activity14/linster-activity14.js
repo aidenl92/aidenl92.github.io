@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	$("#nav_list ul li a").click(function(){
 		console.log("clicked");
-		selectedSpeaker = this.attr("title");
+		selectedSpeaker = $(this).attr("title");
 		$.ajax({
 			type: "get",
 			url: "json_files/"+ selectedSpeaker + ".json",
