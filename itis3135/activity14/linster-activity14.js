@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var selectedSpeaker = "";
 	var imgAlt = "img alt";
 
-	$("#nav-list ul li a").click(function(){
+	$("#nav-list ul li").click(function(){
 		console.log("clicked");
 		selectedSpeaker = this.attr(title);
 		$.ajax({
