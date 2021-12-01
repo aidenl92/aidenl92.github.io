@@ -29,7 +29,7 @@ $(document).ready(function() {
 		}); //end ajax
 	}); //end click
 	
-	
+	console.log("js loaded");
 }); // end ready
  /*
 function getSpeakerInfo(data,speaker,imgAlt){
