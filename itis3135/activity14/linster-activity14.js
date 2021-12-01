@@ -25,7 +25,7 @@ $(document).ready(function() {
 						});
 					});
 				});
-			}; 
+			}
 		}); //end toobin ajax
 	});//end toobin click
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 function getSpeakerInfo(data,speaker,imgAlt){
 	$("main").html("");
-	$.getJSON(speaker +".json"), function(data){
+	$.getJSON(speaker +".json", function(data){
 		$.each(data,function(){
 			$.each(this,function(key,val){
 				"<h1>" + val.title + "</h1>"+
