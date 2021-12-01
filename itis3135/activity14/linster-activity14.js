@@ -1,13 +1,11 @@
-console.log("js loaded?");
 
 $(document).ready(function() {
 	
-	console.log("aaaa");
 	
 	var selectedSpeaker = "";
 	var imgAlt = "img alt";
 
-	$("#nav-list ul li").click(function(){
+	$("#nav_list ul li a").click(function(){
 		console.log("clicked");
 		selectedSpeaker = this.attr(title);
 		$.ajax({
