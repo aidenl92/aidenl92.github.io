@@ -1,5 +1,7 @@
 $(document).ready(function() {
-
+	
+	console.log("aaaa");
+	
 	var selectedSpeaker = "";
 	var imgAlt = "img alt";
 
