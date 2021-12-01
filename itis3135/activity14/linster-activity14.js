@@ -46,5 +46,5 @@ function getSpeakerInfo(data,speaker,imgAlt){
 				"<p>"+ val.text + "</p>"
 			});
 		});
-	});
+	}); //
 */
