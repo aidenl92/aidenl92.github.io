@@ -4,6 +4,7 @@ $(document).ready(function() {
 	var imgAlt = "img alt";
 
 	$("#nav-list ul li a").click(function(){
+		console.log("clicked");
 		selectedSpeaker = this.attr(title);
 		$.ajax({
 			type: "get",
