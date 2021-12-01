@@ -15,7 +15,7 @@ $(document).ready(function() {
 				$.getJSON('toobin.json', function(data){
 					$.each(data,function(){
 						$.each(this, function(key, val){
-							$('main').html(
+							$('main').append(
 								"<h1>" + val.title + "</h1>"+
 								"<h2>" + val.month + "</h2>"+
 								"<h3>" + val.name + "</h3>"+
