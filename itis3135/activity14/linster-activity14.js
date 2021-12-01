@@ -20,7 +20,7 @@ $(document).ready(function() {
 							$("main").append(
 								"<h1>" + val.title + "</h1>"+
 								"<h2>" + val.month + "</h2>"+
-								"<h3>" + val.name + "</h3>"+
+								"<h3>" + val.speaker + "</h3>"+
 								'<img src="'+ val.image +'" alt="'+ imgAlt+'">'+
 								"<p>"+ val.text + "</p>"
 							);
