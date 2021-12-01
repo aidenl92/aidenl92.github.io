@@ -9,6 +9,7 @@ $(document).ready(function() {
         $.ajax({
             type: "get",
             url: "json_files/toobin.json",
+			dataType:"json",
             success: function(data){
 				$('main').html('');
 				$.getJSON('toobin.json', function(data){
@@ -33,6 +34,7 @@ $(document).ready(function() {
 		$.ajax({
 			type: "get",
 			url: "json_files/sorkin.json",
+			dataType: "json",
 			success: function(data){
 				getSpeakerInfo(data,selectedSpeaker,imgAlt);
 			}
