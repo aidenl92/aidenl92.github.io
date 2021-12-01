@@ -14,7 +14,7 @@ $(document).ready(function() {
 			dataType: "json",
 			success: function(data){
 				$("#main").html('');
-				$.getJSON(selectedSpeaker + ".json", function(data){
+				$.getJSON("json_files/"+ selectedSpeaker + ".json", function(data){
 					$.each(data,function(){
 						$.each(this, function(key, val){
 							$("main").append(
