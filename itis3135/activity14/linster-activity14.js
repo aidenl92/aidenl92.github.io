@@ -44,11 +44,11 @@ $(document).ready(function() {
     }); //end sorkin click
 
     $('#chua').click(function(){
-
+		console.log("chua click");
     }); //end chua click
 
     $('#sampson').click(function(){
-
+		console.log("sampson click");
     }); //end sampson click
 	
 	
