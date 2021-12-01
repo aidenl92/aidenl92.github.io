@@ -13,7 +13,7 @@ $(document).ready(function() {
 			url: "json_files/"+ selectedSpeaker + ".json",
 			dataType: "json",
 			success: function(data){
-				$("#main").html('');
+				$("#main").empty();
 				$.getJSON("json_files/"+ selectedSpeaker + ".json", function(data){
 					$.each(data,function(){
 						$.each(this, function(key, val){
