@@ -5,13 +5,13 @@ $(document).ready(function(){
         "            <nav class=\"nav-bar\">\n" +
         "                <a href=\"discs.html\">Discs & Gear</a>\n" +
         "                -\n" +
-        "                <a href=\"http://webpages.uncc.edu/alinster/itis3135/project/courses.html\">Course Reviews</a>\n" +
+        "                <a href=\"courses.html\">Course Reviews</a>\n" +
         "                -\n" +
-        "                <a href=\"http://webpages.uncc.edu/alinster/itis3135/project/\">Home Page</a>\n" +
+        "                <a href=\"index.html\">Home Page</a>\n" +
         "                -\n" +
-        "                <a href=\"http://webpages.uncc.edu/alinster/itis3135/project/tips.html\">Tips</a>\n" +
+        "                <a href=\"tips.html\">Tips</a>\n" +
         "                -\n" +
-        "                <a href=\"http://webpages.uncc.edu/alinster/itis3135/project/pro-quiz.html\">Pro Quiz</a>\n" +
+        "                <a href=\"pro-quiz.html\">Pro Quiz</a>\n" +
         "                <br>"
     );
 
