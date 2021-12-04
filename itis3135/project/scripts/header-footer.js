@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("header").append(
         "<h1>Charlotte Chain Chasers</h1>\n" +
         "            <nav class=\"nav-bar\">\n" +
-        "                <a href=\"http://webpages.uncc.edu/alinster/itis3135/project/discs.html\">Discs & Gear</a>\n" +
+        "                <a href=\"discs.html\">Discs & Gear</a>\n" +
         "                -\n" +
         "                <a href=\"http://webpages.uncc.edu/alinster/itis3135/project/courses.html\">Course Reviews</a>\n" +
         "                -\n" +
