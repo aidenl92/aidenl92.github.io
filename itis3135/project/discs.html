@@ -4,10 +4,16 @@
         <meta charset="UTF-8">
         <meta name="project-discs" content="itis3135 project">
         <link rel="stylesheet" type="text/css" href="styles/default.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <!-- jquery library -->
+        <script
+                src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous"></script>
         <script src="scripts/discs.js"></script>
         <title>CCC - Discs & Gear</title>
         <script src="scripts/header-footer.js"></script>
+        <!-- using jquery ui for dialogue box -->
+        <script src="jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
     </head>
     <body>
         <header>
@@ -16,9 +22,9 @@
             <h2>Discs & Gear</h2>
             <p class="p-margin">
                 These discs are some of our recommendations for beginners to use when starting disc golf.
-                Place your cursor over the flight rating column to get a description of it!
+                Click anywhere on the flight rating column for a description of it!
             </p>
-            <!-- JS TODO: give a description of disc attribute on hover -->
+            <!-- JS TODO: give a description of disc attribute on click -->
             <table>
                 <thead>
                     <tr>
@@ -82,6 +88,8 @@
                     </tr>
                 </tbody>
             </table>
+            <div id="discs-dialog">
+            </div>
         </main>
         <footer>
         </footer>

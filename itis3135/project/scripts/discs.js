@@ -1,17 +1,31 @@
 /*
-	TODO: make button elements for disc types: driver, midrange, putt/approach. the users can click on the button to filter
-	disc types. probably use jquery .hide() and .show() methods 
-	
-	also flight stat description onhover
+	was going to use hover, decided to do onclick  with dialog box
 */
-	
+
 $(document).ready(function(){
-	$(".flight-rating").hover(function(){
+	var flightImg = 'images/flightRatings_edit.png';
+	
+	$("#discs-dialog").html("<img src="+flightImg+">").hide();
+	
+	
+	
+	$(".flight-rating").click(function(){
 		console.log("show flight desc")
-		//preload img of desc and display it in a secondary table column??
-	},
-	function(){
-		console.log("hide flight desc.")
+		$("#discs-dialog").dialog({
+			modal:true,
+			dialogClass: "no-close",
+			buttons: [{
+				text: "OK",
+				click: function(){
+					$(this).dialog("close");
+				}
+			}]
+		});
+		$(".ui-dialog-titlebar-close").css("display","none");
 	});
 	
+	
+	$("#discs-dialog").click(function(){
+		$(this).dialog("close");
+	});
 });

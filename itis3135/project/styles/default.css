@@ -116,6 +116,10 @@ th{
 	font-size: 20px;
 }
 
+table tr{
+	background-color: #042c09;
+}
+
 td{
 	font-size: 17px;
 }
