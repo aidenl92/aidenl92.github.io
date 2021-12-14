@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="project-homepage" content="itis3135 project">
         <link rel="stylesheet" type="text/css" href="styles/default.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <!-- load jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="scripts/homepage.js"></script>
         <title>Charlotte Chain Chasers</title>
         <script src="scripts/header-footer.js"></script>
@@ -16,16 +17,27 @@
             <h2>Welcome!</h2>
             <p class="p-margin">
                 Welcome to Charlotte Chain Chasers! We seek to provide a friendly introduction to
-                disc golf. This paragraph will go into further detail on introducing the sport
-                to those in the Charlotte area.
+                disc golf. Disc golf is an awesome sport in which people of nearly all ages and skill levels can
+                enjoy. With the sport's explosive growth over the past few years, people from many different walks
+                of life have become interested in it. Whether you are out playing a round with friends, or
+                getting some practice in while solo, disc golf is an easily accessible and deeply enjoyable
+                outdoor activity.
             </p>
-            <!-- maybe have a gallery with animation on images that link to the other pages?? -->
-            <div class="center">
-                <figure class="pod-figure">
-                    <img class="pod-placeholder" src="images/disc-golf-placeholder.jpg" alt="disc golf placeholder">
-                    <figcaption>placeholder for picture of the day</figcaption>
-                </figure>
-            </div>
+            <container id="home-container">
+                <div class="box">
+                    <a href="discs.html"><img class="home-img" src="images/rs-home-discs.jpg" alt="Discs"></a>
+                </div>
+                <div class="box">
+                    <a href="courses.html"><img class="home-img" src="images/rs-home-courses.jpg" alt="Course Reviews"></a>
+                </div>
+                  <div class="box">
+                      <a href="tips.html"><img class="home-img" src="images/rs-home-tips.jpg" alt="Tips"></a>
+                </div>
+                  <div class="box">
+                      <a href="pro-quiz.html"><img class="home-img" src="images/rs-question-marks.jpg" alt="Pro Quiz"></a>
+                </div>
+              </container>
+            <br>
         </main>
         <footer>
         </footer>

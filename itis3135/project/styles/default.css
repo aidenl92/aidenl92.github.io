@@ -19,6 +19,10 @@ h1{
 	text-align: center;
 }
 
+h2{
+	font-size: 1.7em;
+}
+
 .nav-bar{
 	text-align: center;
 	font-size: 16px;
@@ -81,6 +85,15 @@ footer a{
 	text-decoration: none;
 }
 
+header{
+	font-size: 28px;
+}
+
+header a{
+	text-decoration: none;
+	font-size: 22px;
+}
+
 .pod-placeholder{
 	height: 500px;
 	width: auto;
@@ -97,7 +110,7 @@ footer a{
 }
 
 p{
-	font-size: 17px;
+	font-size: 20px;
 }
 
 table{
@@ -113,7 +126,7 @@ table td:nth-child(3){
 }
 
 th{
-	font-size: 20px;
+	font-size: 25px;
 }
 
 table tr{
@@ -121,7 +134,7 @@ table tr{
 }
 
 td{
-	font-size: 17px;
+	font-size: 20px;
 }
 
 th,td{
@@ -129,7 +142,38 @@ th,td{
 	padding: 5px;
 }
 
+/*since all original images for discs were the same size
+I decided to resize images in css*/
 table img{
-	width: 300px;
+	width: 300px; 
 	height: auto;
+}
+
+
+
+container{
+	/* TODO: change side margins to center the grid, round the img corners*/
+	display: grid;
+	justify-content: center;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 10px;
+	grid-column-gap: 10px;
+	margin-left: 250px;
+	margin-right: 450px;
+	margin-bottom: 50px;
+}
+
+
+.box{
+	width: auto;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+}
+
+.home-img{
+	border-radius: 30px;
+	width: auto;
+	height: 360px;
 }
