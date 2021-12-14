@@ -151,7 +151,7 @@ table img{
 
 
 
-container{
+#home-container{
 	/* TODO: change side margins to center the grid, round the img corners*/
 	display: grid;
 	justify-content: center;
