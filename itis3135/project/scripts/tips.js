@@ -18,7 +18,7 @@ $(document).ready(function(){
 					});
 				});
 			});	
-			console.log(accordString);
+			console.log("accord string:"+accordString);
 		},
 		error: function(data){
 			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
