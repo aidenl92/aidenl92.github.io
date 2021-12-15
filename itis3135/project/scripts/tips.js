@@ -2,9 +2,7 @@ $(document).ready(function(){
 
 	//get json content through ajax
 	$.ajax({
-		type: "get",
-		url: "json_files/beginner-tips.json",
-		dataType:"json",
+		
 		success: function(data){
 			$("#accordion").empty();
 			$.getJSON("json_files/beginner-tips.json", function(data){
