@@ -19,6 +19,7 @@ $(document).ready(function(){
 			$("#accordion").html(htmlData);
 			
 			//accordion widget
+			/*
 			$("#accordion").accordion({
 					icons: {
 							  "header": "ui-icon-triangle-1-e",
@@ -30,8 +31,9 @@ $(document).ready(function(){
 			$("#accordion").css({
 				"marginRight": "900px"
 			});
-		},
-		timeout: 3000
+			*/
+		}
+		//timeout: 3000
 	});
 
 	
