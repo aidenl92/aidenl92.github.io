@@ -177,3 +177,7 @@ table img{
 	width: auto;
 	height: 360px;
 }
+
+#accordion h3{
+	font-size: 1.9em;
+}
