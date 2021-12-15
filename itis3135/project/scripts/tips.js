@@ -26,7 +26,8 @@ $(document).ready(function(){
 				},
 				collapsible: true,
 				heightStyle:"content",
-				active: false
+				active: false,
+				header: "h3"
 			}).css({
 				"marginRight": "900px"
 			});
