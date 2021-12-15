@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	var accordString = "";
+	var accordString;
 	//get json content through ajax
 	$.ajax({
 		type:"get",
