@@ -5,18 +5,17 @@ $(document).ready(function(){
 		url:"json_files/beginner-tips.json",
 		success: function(data){
 			$("#accordion").empty();
-			var htmlData = ''
 			$.getJSON("json_files/beginner-tips.json", function(data){
 				$.each(data, function(){
 					$.each(this, function(key, val){
-						htmlData +=
+						$("#accordion").append(
 							"<h3>" + val.title + "</h3>"+
 							"<div><p>"+ val.description + "</p></div>"
-						;
+						);
 					});
 				});
 			});
-			$("#accordion").html(htmlData);
+		
 			
 			//accordion widget
 			/*
