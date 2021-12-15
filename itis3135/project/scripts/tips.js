@@ -36,6 +36,7 @@ $(document).ready(function(){
 		},
 		error: function(data){
 			alert(JSON.stringify(data));
+			console.log(data);
 		}
 	});
 
