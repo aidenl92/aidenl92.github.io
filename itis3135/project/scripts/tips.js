@@ -17,8 +17,8 @@ $(document).ready(function(){
 					});
 				});
 			});	
-			
-			loadAccordion();
+			console.log("m");
+			$("#accordion").accordion();
 		},
 		error: function(data){
 			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
@@ -29,14 +29,5 @@ $(document).ready(function(){
 });
 
 function loadAccordion(){
-	//accordion widget on ajax complete
-			$("#accordion").accordion({
-				icons: {
-				  "header": "ui-icon-triangle-1-e",
-				  "activeHeader": "ui-icon-triangle-1-s"
-				},
-				collapsible: true
-			}).css({
-				"marginRight": "900px"
-			});
+	
 }
