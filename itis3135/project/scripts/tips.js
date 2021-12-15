@@ -1,16 +1,5 @@
 $(document).ready(function(){
-	// initialize accordion 
-			$("#accordion").accordion({
-				icons: {
-				  "header": "ui-icon-triangle-1-e",
-				  "activeHeader": "ui-icon-triangle-1-s"
-				},
-				collapsible: true,
-				heightStyle:"content",
-				active: false
-			}).css({
-				"marginRight": "900px"
-			});
+
 	//get json content through ajax
 	$.ajax({
 		type:"get",
@@ -18,10 +7,11 @@ $(document).ready(function(){
 		dataType:"json",
 		success: function(data){
 			$("#accordion").empty();
+			var accordString = "";
 			$.getJSON("json_files/beginner-tips.json", function(data){
 				$.each(data,function(data){
 					$.each(this, function(key, val){
-						$("#accordion").append(
+						accordString +=(
 							"<h3>" + val.title+ "</h3>"+
 								"<div><p>"+ val.description + "</p></div>"
 						);
@@ -34,7 +24,19 @@ $(document).ready(function(){
 			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
 		},
 		complete: function(){
-			$("#accordion").accordion("refresh");
+			$("#accordion").html(accordString);
+			// initialize accordion 
+			$("#accordion").accordion({
+				icons: {
+				  "header": "ui-icon-triangle-1-e",
+				  "activeHeader": "ui-icon-triangle-1-s"
+				},
+				collapsible: true,
+				heightStyle:"content",
+				active: false
+			}).css({
+				"marginRight": "900px"
+			});
 		}
 	});
 
