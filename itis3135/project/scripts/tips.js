@@ -1,14 +1,37 @@
 $(document).ready(function(){
-	//accordion widget
-	$("#accordion").accordion({
-				icons: {
-						  "header": "ui-icon-triangle-1-e",
-						  "activeHeader": "ui-icon-triangle-1-s"
-						},
-				collapsible: true
+
+	//get json content through ajax
+	$.ajax({
+		url:"json_files/beginner-tips.json",
+		success: function(data){
+			$("#accordion").empty();
+			var htmlData = ''
+			$.getJSON("json_files/beginner-tips.json", function(data){
+				$.each(data, function(){
+					$.each(this, function(key, val){
+						htmlData +=
+							"<h3>" + val.title + "</h3>"+
+							"<div><p>"+ val.description + "</p></div>"
+						;
+					});
+				});
 			});
+			$("#accordion").html(htmlData);
 			
+			//accordion widget
+			$("#accordion").accordion({
+					icons: {
+							  "header": "ui-icon-triangle-1-e",
+							  "activeHeader": "ui-icon-triangle-1-s"
+							},
+					collapsible: true
+			});
+					
 			$("#accordion").css({
 				"marginRight": "900px"
 			});
+		}
+	});
+
+	
 });
