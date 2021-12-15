@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
 	//get json content through ajax
 	$.ajax({
 		type:"get",
@@ -18,7 +18,18 @@ $(document).ready(function(){
 				});
 			});	
 			console.log("m");
-			$("#accordion").accordion();
+			//accordion widget on ajax complete
+			$("#accordion").accordion({
+				icons: {
+				  "header": "ui-icon-triangle-1-e",
+				  "activeHeader": "ui-icon-triangle-1-s"
+				},
+				collapsible: true,
+				heightStyle:"content",
+				active: false
+			}).css({
+				"marginRight": "900px"
+			});
 		},
 		error: function(data){
 			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
