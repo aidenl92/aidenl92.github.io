@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	var accData= $(this);
+	
 	//get json content through ajax
 	$.ajax({
 		type:"get",
@@ -11,7 +11,7 @@ $(document).ready(function(){
 			$.getJSON("json_files/beginner-tips.json", function(data){
 				$.each(data,function(data){
 					$.each(this, function(key, val){
-						$(accData).append(
+						$("#accordion").append(
 							"<h3>" + val.title+ "</h3>"+
 								"<div><p>"+ val.description + "</p></div>"
 						);
@@ -22,23 +22,22 @@ $(document).ready(function(){
 		},
 		error: function(data){
 			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
-		},
-		complete: function(){
-			$("#accordion").append(accData);
-			// initialize accordion 
-			$("#accordion").accordion({
-				icons: {
-				  "header": "ui-icon-triangle-1-e",
-				  "activeHeader": "ui-icon-triangle-1-s"
-				},
-				collapsible: true,
-				heightStyle:"content",
-				active: false
-			}).css({
-				"marginRight": "900px"
-			});
-			$("#accordion").accordion("refresh");
 		}
 	});
 
+});
+
+$(document)ajaxComplete(function(){
+	// initialize accordion after ajax complete
+	$("#accordion").accordion({
+		icons: {
+		  "header": "ui-icon-triangle-1-e",
+		  "activeHeader": "ui-icon-triangle-1-s"
+		},
+		collapsible: true,
+		heightStyle:"content",
+		active: false
+	}).css({
+		"marginRight": "900px"
+	});
 });
