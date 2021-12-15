@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	var accordString = "";
 	//get json content through ajax
 	$.ajax({
 		type:"get",
@@ -7,7 +8,6 @@ $(document).ready(function(){
 		dataType:"json",
 		success: function(data){
 			$("#accordion").empty();
-			var accordString = "";
 			$.getJSON("json_files/beginner-tips.json", function(data){
 				$.each(data,function(data){
 					$.each(this, function(key, val){
@@ -18,7 +18,7 @@ $(document).ready(function(){
 					});
 				});
 			});	
-			
+			console.log(accordString);
 		},
 		error: function(data){
 			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
