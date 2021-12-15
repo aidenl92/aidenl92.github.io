@@ -5,6 +5,7 @@ $(document).ready(function(){
 		type: "get",
 		url: "json_files/beginner-tips.json",
 		dataType:"json",
+		async: false,
 		success: function(data){
 			$("#accordion").empty();
 			$.getJSON("json_files/beginner-tips.json", function(data){
