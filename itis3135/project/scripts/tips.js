@@ -2,7 +2,6 @@ $(document).ready(function(){
 
 	//get json content through ajax
 	$.ajax({
-		type:"get",
 		url: "json_files/beginner-tips.json",
 		dataType:"json",
 		success: function(data){
@@ -17,7 +16,6 @@ $(document).ready(function(){
 					});
 				});
 			});	
-			console.log("m");
 			//accordion widget on ajax complete
 			$("#accordion").accordion({
 				icons: {
@@ -26,8 +24,7 @@ $(document).ready(function(){
 				},
 				collapsible: true,
 				heightStyle:"content",
-				active: false,
-				header: "h3"
+				active: false
 			}).css({
 				"marginRight": "900px"
 			});
