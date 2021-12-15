@@ -13,7 +13,7 @@ $(document).ready(function(){
 						$("#accordion").append(
 							"<h3>" + val.title + "</h3>"+
 							"<div><p>"+ val.description + "</p></div>"
-						)
+						);
 					});
 				});
 			});
@@ -36,5 +36,5 @@ $(document).ready(function(){
 		}
 	});
 
-	
+
 });
