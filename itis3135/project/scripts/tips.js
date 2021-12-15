@@ -7,11 +7,11 @@ $(document).ready(function(){
 		url: "json_files/beginner-tips.json",
 		dataType:"json",
 		success: function(data){
-			$(".accordion").empty();
+			$("#accordion").empty();
 			$.getJSON("json_files/beginner-tips.json", function(data){
 				$.each(data,function(data){
 					$.each(this, function(key, val){
-						$(".accordion").append(
+						$("#accordion").append(
 							"<h3>" + val.title+ "</h3>"+
 								"<div><p>"+ val.description + "</p></div>"
 						);
@@ -19,7 +19,7 @@ $(document).ready(function(){
 				});
 			});	
 			// initialize accordion
-			$('.accordion').accordion({
+			$('#accordion').accordion({
 				icons: {
 				  "header": "ui-icon-triangle-1-e",
 				  "activeHeader": "ui-icon-triangle-1-s"
