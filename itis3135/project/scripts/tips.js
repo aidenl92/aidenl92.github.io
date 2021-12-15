@@ -4,7 +4,6 @@ $(document).ready(function(){
 	$.ajax({
 		type: "get",
 		url: "json_files/beginner-tips.json",
-		dataType:"json",
 		success: function(data){
 			$("#accordion").empty();
 			$.getJSON("json_files/beginner-tips.json", function(data){
@@ -35,7 +34,6 @@ $(document).ready(function(){
 			*/
 		},
 		error: function(data){
-			console.log(data);
 			console.log(JSON.stringify(data));
 		}
 	});
