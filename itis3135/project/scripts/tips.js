@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 });
 
-$(document)ajaxComplete(function(){
+$(document).ajaxComplete(function(){
 	// initialize accordion after ajax complete
 	$("#accordion").accordion({
 		icons: {
