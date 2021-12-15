@@ -19,9 +19,7 @@ $(document).ready(function(){
 	}
 	
 
-	//initialize venobox Plugin
-	
-	
+	//set up course div  with image elements ready for venobox
 	var j=0;
 	for(j; j< 3;j++){
 		console.log($("#thumbs").children().eq(j).prop('outerHTML'));
@@ -49,6 +47,8 @@ $(document).ready(function(){
 	
 	$(".venobox").css("text-decoration","none");
 	
+	//initialize venobox Plugin
+
 	$(".venobox").venobox({
 		infinigall: true
 	}); 
