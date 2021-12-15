@@ -1,14 +1,4 @@
 $(document).ready(function(){
-	//accordion widget
-	$("#accordion").accordion({
-		icons: {
-		  "header": "ui-icon-triangle-1-e",
-		  "activeHeader": "ui-icon-triangle-1-s"
-		},
-		collapsible: true
-	}).css({
-		"marginRight": "900px"
-	});
 	
 	//get json content through ajax
 	$.ajax({
@@ -27,7 +17,16 @@ $(document).ready(function(){
 					});
 				});
 			});	
-			$("#accordion").accordion("refresh");
+			//accordion widget
+			$("#accordion").accordion({
+				icons: {
+				  "header": "ui-icon-triangle-1-e",
+				  "activeHeader": "ui-icon-triangle-1-s"
+				},
+				collapsible: true
+			}).css({
+				"marginRight": "900px"
+			});
 			
 		},
 		error: function(data){
