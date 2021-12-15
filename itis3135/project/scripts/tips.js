@@ -27,8 +27,8 @@ $(document).ready(function(){
 
 });
 
-$(document).ajaxComplete(function(){
-	// initialize accordion after ajax complete
+$(document).ajaxSuccess(function(){
+	// initialize accordion
 	$("#accordion").accordion({
 		icons: {
 		  "header": "ui-icon-triangle-1-e",
