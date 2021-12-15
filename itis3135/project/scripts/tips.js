@@ -11,10 +11,10 @@ $(document).ready(function(){
 			$.getJSON("json_files/beginner-tips.json", function(data){
 				$.each(data,function(data){
 					$.each(this, function(key, val){
-						accordString +=(
+						accordString +=
 							"<h3>" + val.title+ "</h3>"+
 								"<div><p>"+ val.description + "</p></div>"
-						);
+						;
 					});
 				});
 			});	
