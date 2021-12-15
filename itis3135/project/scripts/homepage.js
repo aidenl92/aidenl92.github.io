@@ -7,9 +7,17 @@
 $(document).ready(function(){
 	
 	
-	
-	$(".box").mouseover(function(){
+	/*
+	$(".box").hover(function(){
 		console.log($(this).attr("title"));
-		// on mouseover, create animation with css
+		// on hover, create animation with css
+		$(this).animate({
+			
+		});
+	},
+	function(){
+		
+	
 	});
+	*/
 });
