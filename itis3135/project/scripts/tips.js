@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	var accData= '';
+	var accData= $(this);
 	//get json content through ajax
 	$.ajax({
 		type:"get",
@@ -11,10 +11,10 @@ $(document).ready(function(){
 			$.getJSON("json_files/beginner-tips.json", function(data){
 				$.each(data,function(data){
 					$.each(this, function(key, val){
-						accData +=
+						$(accData).append(
 							"<h3>" + val.title+ "</h3>"+
 								"<div><p>"+ val.description + "</p></div>"
-						;
+						);
 					});
 				});
 			});	
