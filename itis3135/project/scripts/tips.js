@@ -19,6 +19,9 @@ $(document).ready(function(){
 			});	
 			
 		},
+		error: function(data){
+			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
+		},
 		complete: function(){
 			//accordion widget on ajax complete
 			$("#accordion").accordion({
@@ -30,10 +33,8 @@ $(document).ready(function(){
 			}).css({
 				"marginRight": "900px"
 			});
-		},
-		error: function(data){
-			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
 		}
+		
 	});
 
 
