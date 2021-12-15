@@ -3,7 +3,7 @@ $(document).ready(function(){
 	
 	//get json content through ajax
 	$.ajax({
-	
+		url:"json_files/beginner-tips.json",
 		success: function(data){
 			$("#accordion").empty();
 			$.getJSON("json_files/beginner-tips.json", function(data){
@@ -16,7 +16,8 @@ $(document).ready(function(){
 					});
 				});
 			});
-		}
+		},
+		timeout: 3000
 	});
 	
 	//accordion widget
