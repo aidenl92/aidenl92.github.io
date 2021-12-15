@@ -1,6 +1,6 @@
 $(document).ready(function(){
-
-
+	
+	var accData= '';
 	//get json content through ajax
 	$.ajax({
 		type:"get",
@@ -11,13 +11,20 @@ $(document).ready(function(){
 			$.getJSON("json_files/beginner-tips.json", function(data){
 				$.each(data,function(data){
 					$.each(this, function(key, val){
-						$("#accordion").append(
+						accData +=
 							"<h3>" + val.title+ "</h3>"+
 								"<div><p>"+ val.description + "</p></div>"
-						);
+						;
 					});
 				});
 			});	
+			
+		},
+		error: function(data){
+			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
+		},
+		complete: function(){
+			$("#accordion").append(accData);
 			// initialize accordion 
 			$("#accordion").accordion({
 				icons: {
@@ -30,11 +37,6 @@ $(document).ready(function(){
 			}).css({
 				"marginRight": "900px"
 			});
-		},
-		error: function(data){
-			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
-		},
-		complete: function(){
 			$("#accordion").accordion("refresh");
 		}
 	});
