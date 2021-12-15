@@ -3,11 +3,11 @@ $(document).ready(function(){
 	//get json content through ajax
 	$.ajax({
 		type: "get",
-		url:"json_files/tips.json",
+		url:"json_files/beginner-tips.json",
 		dataType:"json",
 		success: function(data){
 			$("#accordion").empty();
-			$.getJSON("json_files/tips.json", function(data){
+			$.getJSON("json_files/beginner-tips.json", function(data){
 				$.each(data,function(){
 					$.each(this, function(key, val){
 						$("#accordion").append(
