@@ -2,6 +2,7 @@ $(document).ready(function(){
 	
 	//get json content through ajax
 	$.ajax({
+		console.log("ajax loaded");
 		type: "get",
 		url:"json_files/beginner-tips.json",
 		dataType:"json",
@@ -19,4 +20,6 @@ $(document).ready(function(){
 			});
 		}
 	});
+	
+	console.log("js loaded");
 });
