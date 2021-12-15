@@ -30,7 +30,8 @@ $(document).ready(function(){
 			$("#accordion").css({
 				"marginRight": "900px"
 			});
-		}
+		},
+		timeout: 3000
 	});
 
 	
