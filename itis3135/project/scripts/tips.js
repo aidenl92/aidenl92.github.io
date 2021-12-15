@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+$("#btn-tips").click(function(){
 	//get json content through ajax
 	$.ajax({
 		type: "get",
@@ -39,5 +41,5 @@ $(document).ready(function(){
 		}
 	});
 
-
+});
 });
