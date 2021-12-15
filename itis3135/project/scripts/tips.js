@@ -18,7 +18,15 @@ $(document).ready(function(){
 					});
 				});
 			});	
+			
+		},
+		error: function(data){
+			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
+		},
+		complete: function(){
 			// initialize accordion
+			$("#accordion").accordion();
+			/*
 			$('#accordion').accordion({
 				icons: {
 				  "header": "ui-icon-triangle-1-e",
@@ -30,9 +38,7 @@ $(document).ready(function(){
 			}).css({
 				"marginRight": "900px"
 			});
-		},
-		error: function(data){
-			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
+			*/
 		}
 	});
 
