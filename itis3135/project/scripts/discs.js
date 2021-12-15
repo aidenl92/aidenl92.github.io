@@ -26,6 +26,13 @@ $(document).ready(function(){
 		console.log("show flight desc")
 		$("#discs-dialog").dialog({
 			modal:true,
+			minWidth: 920,
+			minHeight: 595,
+			position:{
+				my: "left",
+				at: "right",
+				of: this
+			},
 			buttons: [{
 				text: "OK",
 				click: function(){
@@ -40,4 +47,5 @@ $(document).ready(function(){
 	$("#discs-dialog").click(function(){
 		$(this).dialog("close");
 	});
+	
 });

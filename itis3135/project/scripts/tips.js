@@ -4,17 +4,18 @@ $(document).ready(function(){
 	$.ajax({
 		type: "get",
 		url: "json_files/beginner-tips.json",
+		dataType:"json",
 		success: function(data){
 			$("#accordion").empty();
 			$.getJSON("json_files/beginner-tips.json", function(data){
-				//$.each(data, function(){
-					$.each(this, function(key, val){
-						$("#accordion").append(
-							"<h3>" + val.title + "</h3>"+
-							"<div><p>"+ val.description + "</p></div>"
+				for( vari=0; i < data.length; i++){
+					$("#accordion").append(
+							"<h3>" + data[i].title+ "</h3>"+
+							"<div><p>"+ data[i].description + "</p></div>"
 						);
-					});
-				//});
+				}
+						
+					
 			});
 		
 			
