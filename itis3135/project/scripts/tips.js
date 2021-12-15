@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-$("#btn-tips").click(function(){
 	//get json content through ajax
 	$.ajax({
 		type: "get",
@@ -10,14 +8,12 @@ $("#btn-tips").click(function(){
 		success: function(data){
 			$("#accordion").empty();
 			$.getJSON("json_files/beginner-tips.json", function(data){
-				for( vari=0; i < data.length; i++){
+				$.each(data,function(key,val){)
 					$("#accordion").append(
-							"<h3>" + data[i].title+ "</h3>"+
-							"<div><p>"+ data[i].description + "</p></div>"
-						);
-				}
-						
-					
+							"<h3>" + val.title+ "</h3>"+
+							"<div><p>"+ val.description + "</p></div>"
+					);
+				});
 			});
 		
 			
@@ -37,9 +33,9 @@ $("#btn-tips").click(function(){
 			*/
 		},
 		error: function(data){
-			console.log(JSON.stringify(data));
+			console.log(JSON.stringify(data)); //this is here so i can see the ajax error
 		}
 	});
 
-});
+
 });
