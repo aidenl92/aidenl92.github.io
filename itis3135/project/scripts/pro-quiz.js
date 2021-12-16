@@ -2,7 +2,8 @@ $(document).ready(function(){
 	
 	var userAns= [];
 	var ansList = [];
-	incorrect = [];
+	 $("#quiz-score").hide();
+	 $("#correct-ans").hide();
 	
 	$("form").submit(function(e){
 		e.preventDefault();
@@ -35,16 +36,19 @@ $(document).ready(function(){
 					$.getJSON("json_files/answer_key.json",function(data){
 						$.each(data, function(key,val){
 							ansList.push(JSON.stringify(val.ans));
+							$("#correct-ans").append(
+								"\n<h3>"+val.ans+"</h3"
+							);
 						});
 					});
-					
+					$("#correct-ans").show();
+					$("#q"+i).append("	<b>"+ansList[i]+"</b>").css("color","color:#FFC300");
 					for(var i=0; i < ansList.length; i++){
-						if(userAns[i] != ansList[i]){
+						if(JSON.Stringify(userAns[i]) != JSON.Stringify(ansList[i])){
 							score--;
-							incorrect.push("q"+i);
-							$("#q"+i).append("	<b>"+ansList[i]+"</b>").css("color","color:#FFC300");
 						}
 					}
+					$("#quiz-scord").html("Your score: "+score+" out of 4").show();
 				
 				}
 			});

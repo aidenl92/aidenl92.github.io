@@ -188,11 +188,18 @@ table img{
 }
 
 form p b{
-	color:#FFC300;
 	font-size: 23;
 }
 
 #correct-ans{
 	color:#FFC300;
-	font-size: 23;
+	font-size: 23px;
+	float: right;
 }
+
+#quiz-score{
+	color:#FFC300;
+	font-size: 23px;
+	float: right;
+}
+
