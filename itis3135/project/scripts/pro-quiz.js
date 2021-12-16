@@ -23,8 +23,8 @@ $(document).ready(function(){
 		else{
 			//alert("ok!");
 			$("#submit-quiz").attr("disabled","disabled");
-			for(var i=0; i < 3; i++){
-				userAns.push($("input[name='q"+i+1+"']:checked").val());
+			for(var i=1; i < 4; i++){
+				userAns.push($("input[name='q"+i+"']:checked").val());
 			}
 			userAns.push(q4Ans);
 			//ajax

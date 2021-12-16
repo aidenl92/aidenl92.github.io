@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	("#accordion").accordion();
+	$("#accordion").accordion();
 	//get json content through ajax
 	$.ajax({
 		type:"get",
