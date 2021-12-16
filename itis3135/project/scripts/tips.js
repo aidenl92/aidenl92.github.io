@@ -13,7 +13,7 @@ $(document).ready(function(){
 					$.each(this, function(key, val){
 						$("#accordion").append(
 							"<h3>" + val.title+ "</h3>"+
-								"<div><p>"+ val.description + "</p></div>"
+							"<div><p>"+ val.description + "</p> <img src="+val.image+"></div>"
 						);
 					});
 				});
