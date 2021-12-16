@@ -20,6 +20,7 @@ $(document).ready(function(){
 		}
 		else{
 			//alert("ok!");
+			$("#submit-quiz").attr("disabled","disabled");
 			for(var i=0; i < 3; i++){
 				userAns.push($("input[name='q"+i+"']:checked").val());
 			}
@@ -33,7 +34,7 @@ $(document).ready(function(){
 					var score = 4;
 					$.getJSON("json_files/answer_key.json",function(data){
 						$.each(data, function(key,val){
-							ansList.push(val.ans);
+							ansList.push(JSON.stringify(val.ans));
 						});
 					});
 					
@@ -41,7 +42,7 @@ $(document).ready(function(){
 						if(userAns[i] != ansList[i]){
 							score--;
 							incorrect.push("q"+i);
-							$("#q"+i).append("	<b>"+ansList[i]+"</b>")
+							$("#q"+i).append("	<b>"+ansList[i]+"</b>").css("color","color:#FFC300");
 						}
 					}
 				
