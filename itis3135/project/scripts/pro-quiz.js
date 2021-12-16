@@ -7,7 +7,7 @@ $(document).ready(function(){
 	 $("#ans-header").hide();
 	
 	$("form").submit(function(e){
-
+		e.preventDefault();
 		var isValid = false; 
 		var q4Ans = $("#q4-box").val().trim();
 		q4Ans = q4Ans.toLowerCase();
