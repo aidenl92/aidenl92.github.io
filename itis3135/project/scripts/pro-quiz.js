@@ -50,13 +50,12 @@ $(document).ready(function(){
 					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
-						$("#user-ans").append("<h3>"+userAns[i]+"</h3>");
-						if($("#user-ans").children().eq(i).html() == $("#correct-ans").children().eq(i).html()){
+						var htmlAns = $("#correct-ans").children().eq(i).html();
+						if(userAns[i] == htmlAns){
 							score++;
 						}
 						
 					}
-				
 					$("#quiz-score").html("Your score: "+score+" out of 4").show();
 				},
 				error: function(data){
