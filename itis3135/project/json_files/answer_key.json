@@ -1,8 +1,15 @@
 {"answers":[
-	
-		"Paul McBeth",
-		"Paige Pierce",
-		"Brody Smith",
-		"Eagle"
+	{
+		"ans":"Paul McBeth"
+	},
+	{
+		"ans":"Paige Pierce"
+	},
+	{
+		"ans":"Brody Smith"
+	},
+	{
+		"ans":"Eagle"
+	}
 	
 ]}

@@ -38,7 +38,7 @@ $(document).ready(function(){
 						$.each(this, function(ansKey,val){
 							ansList.push(val);
 							$("#correct-ans").append(
-								"\n<h3>"+val+"</h3"
+								"<h3>"+val+"</h3>"
 							);
 						});
 					});
