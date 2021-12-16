@@ -4,6 +4,7 @@ $(document).ready(function(){
 	var ansList = [];
 	 $("#quiz-score").hide();
 	 $("#correct-ans").hide();
+	 $("#ans-header").hide();
 	
 	$("form").submit(function(e){
 		e.preventDefault();
@@ -42,7 +43,6 @@ $(document).ready(function(){
 						});
 					});
 					$("#correct-ans").show();
-					$("#q"+i).append("	<b>"+ansList[i]+"</b>").css("color","color:#FFC300");
 					for(var i=0; i < ansList.length; i++){
 						if(JSON.Stringify(userAns[i]) != JSON.Stringify(ansList[i])){
 							score--;
