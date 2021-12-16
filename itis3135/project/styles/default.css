@@ -199,15 +199,14 @@ form p b{
 	font-size: 23;
 }
 
-.correct-ans{
+.answer-class{
 	color:#FFC300;
 	font-size: 23px;
 	float: right;
+	margin-right: 200px;
 }
 
-#quiz-score{
-	color:#FFC300;
-	font-size: 23px;
-	float: right;
-}
+
+
+
 

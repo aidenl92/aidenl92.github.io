@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var userAns= [];
 	var ansList = [];
 	 $("#quiz-score").hide();
-	 $(".correct-ans").hide();
+	 $("#correct-ans").hide();
 	 $("#ans-header").hide();
 	
 	$("form").submit(function(e){
@@ -38,7 +38,7 @@ $(document).ready(function(){
 						$.each(data,function(data){
 							$.each(this, function(key,val){
 								ansList.push(val.ans);
-								$(".correct-ans").append(
+								$("#correct-ans").append(
 									"<h3>"+val.ans+"</h3>"
 								);
 							});
@@ -46,7 +46,7 @@ $(document).ready(function(){
 					});
 					console.log(ansList);
 					console.log(userAns);
-					$(".correct-ans").show();
+					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
 						if(userAns[i] == ansList[i]){
