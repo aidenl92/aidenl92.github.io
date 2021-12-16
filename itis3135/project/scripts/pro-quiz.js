@@ -46,6 +46,7 @@ $(document).ready(function(){
 					});
 					console.log(ansList);
 					console.log(userAns);
+					console.log(ansList[2]);
 					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
