@@ -62,7 +62,7 @@ $(document).ready(function(){
 					
 					$("#user-ans").hide();
 					//$("#quiz-score").html("Your score: "+score+" out of 4").show();
-					$(window).scrollTo(0,0);
+					$("h2").scrollTop(0);
 				},
 				error: function(data){
 					console.log(JSON.stringify(data)); //this is here so i can see the ajax error
