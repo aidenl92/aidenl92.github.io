@@ -24,7 +24,7 @@ $(document).ready(function(){
 			//alert("ok!");
 			$("#submit-quiz").attr("disabled","disabled");
 			for(var i=0; i < 3; i++){
-				userAns.push($("input[name='q"+i+"']:checked").val());
+				userAns.push($("input[name='q"+i+1+"']:checked").val());
 			}
 			userAns.push(q4Ans);
 			//ajax
@@ -35,11 +35,13 @@ $(document).ready(function(){
 				success: function(data){
 					var score = 4;
 					$.getJSON("json_files/answer_key.json",function(data){
-						$.each(data, function(key,val){
-							ansList.push(JSON.stringify(val.ans));
-							$("#correct-ans").append(
-								"\n<h3>"+val.ans+"</h3"
-							);
+						$.each(data, function(){
+							$.each(this, function(key,val){
+								ansList.push(val.ans);
+								$("#correct-ans").append(
+									"\n<h3>"+val.ans+"</h3"
+								);
+							});
 						});
 					});
 					console.log(ansList);
