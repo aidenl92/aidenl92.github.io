@@ -42,7 +42,10 @@ $(document).ready(function(){
 							);
 						});
 					});
+					console.log(ansList);
+					console.log(userAns);
 					$("#correct-ans").show();
+					$("#ans-header").show();
 					for(var i=0; i < ansList.length; i++){
 						if(JSON.Stringify(userAns[i]) != JSON.Stringify(ansList[i])){
 							score--;
