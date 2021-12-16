@@ -56,6 +56,7 @@ $(document).ready(function(){
 						}
 						
 					}
+					console.log(htmlAns);
 					$("#quiz-score").html("Your score: "+score+" out of 4").show();
 				},
 				error: function(data){
