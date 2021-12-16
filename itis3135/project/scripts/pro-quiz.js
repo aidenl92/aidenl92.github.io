@@ -33,11 +33,13 @@ $(document).ready(function(){
 				url:"json_files/answer_key.json",
 				dataType: "json",
 				success: function(data){
+					var jStr = "";
 					var score = 0;
 					$.getJSON("json_files/answer_key.json",function(data){
 						$.each(data,function(data){
 							$.each(this, function(key,val){
-								ansList.push(val.ans);
+								jStr = JSON.stringify(val.ans);
+								ansList.push(jStr);
 								$("#correct-ans").append(
 									"<h3>"+val.ans+"</h3>"
 								);
@@ -49,6 +51,7 @@ $(document).ready(function(){
 					console.log(ansList[2]);
 					$("#correct-ans").show();
 					$("#ans-header").show();
+					/*
 					for(var i=0; i < userAns.length; i++){
 						var htmlAns = $("#correct-ans h3").eq(i).text();
 						if(userAns[i] == htmlAns){
@@ -56,6 +59,7 @@ $(document).ready(function(){
 						}
 						
 					}
+					*/
 					console.log(htmlAns);
 					$("#quiz-score").html("Your score: "+score+" out of 4").show();
 				},
