@@ -35,11 +35,13 @@ $(document).ready(function(){
 				success: function(data){
 					var score = 4;
 					$.getJSON("json_files/answer_key.json",function(data){
-						$.each(this, function(ansKey,val){
-							ansList.push(val);
-							$("#correct-ans").append(
-								"<h3>"+val+"</h3>"
-							);
+						$.each(data,function(){
+							$.each(this, function(key,val){
+								ansList.push(val.ans);
+								$("#correct-ans").append(
+									"<h3>"+val.ans+"</h3>"
+								);
+							});
 						});
 					});
 					console.log(ansList);
