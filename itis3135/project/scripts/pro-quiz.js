@@ -56,11 +56,12 @@ $(document).ready(function(){
 						if($("#user-ans h3").eq(i).text() == $("#correct-ans h3").eq(i).text()){
 							score++;
 						}
-						
+						console.log($("#user-ans h3").eq(i).text());
+						consloe.log($("#correct-ans h3").eq(i).text());
 					}
 					
-				
-					$("#quiz-score").html("Your score: "+score+" out of 4").show();
+					$("#user-ans").hide();
+					//$("#quiz-score").html("Your score: "+score+" out of 4").show();
 				},
 				error: function(data){
 					console.log(JSON.stringify(data)); //this is here so i can see the ajax error
