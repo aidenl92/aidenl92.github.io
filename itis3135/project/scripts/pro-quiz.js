@@ -49,7 +49,7 @@ $(document).ready(function(){
 					console.log(userAns);
 					$("#correct-ans").show();
 					$("#ans-header").show();
-					var jArr = JSON.parse(userAns);
+					var jArr = JSON.parse(JSON.stringify(userAns);
 					console.log(jArr);
 					for(var i=0; i < userAns.length; i++){
 						if(jArr[i] == ansList[i]){
