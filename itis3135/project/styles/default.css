@@ -181,3 +181,13 @@ table img{
 #accordion h3{
 	font-size: 1.9em;
 }
+
+#home-overlay{
+	display: none;
+	positon: fixed;
+}
+
+form p b{
+	color:#FFC300;
+	font-size: 23;
+}

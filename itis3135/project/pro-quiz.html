@@ -5,9 +5,11 @@
         <meta name="project-pro quiz" content="itis3135 project">
         <link rel="stylesheet" type="text/css" href="styles/default.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="scripts/pro-quiz.js"></script>
         <title>CCC - Pro Quiz</title>
         <script src="scripts/header-footer.js"></script>
+        <script src="jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="jquery-ui-1.13.0.custom/jquery-ui.css">
+        <script src="scripts/pro-quiz.js"></script>
     </head>
     <body>
         <header></header>
@@ -15,64 +17,65 @@
             <h2>Disc Golf Pro Quiz</h2>
             <p>Test your knowledge with a quick quiz on disc golf pro players!</p>
             <form class="quiz-form" action="#">
-                <p>
-                    1: Who holds the most official wins?
+                <p id="q1">
+                    Who holds the most official wins?
                 </p>
                 <label for="q1-a">
-                    <input id="q1-a" type="radio" name="q1" checked>Simon Lizotte
+                    <input id="q1-a" value="Simon Lizotte" type="radio" name="q1" checked>Simon Lizotte
                 </label>
                 <br>
                 <label for="q1-b">
-                    <input id="q1-b" type="radio" name="q1">Nate Sexton
+                    <input id="q1-b" value="Nate Sexton" type="radio" name="q1">Nate Sexton
                 </label>
                 <br>
                 <label for="q1-c">
-                    <input id="q1-c" type="radio" name="q1">Paul McBeth
+                    <input id="q1-c" value="Paul McBeth" type="radio" name="q1">Paul McBeth
                 </label>
                 <br>
                 <label for="q1-d">
-                    <input id="q1-d" type="radio" name="q1">Drew Gibson
+                    <input id="q1-d" value="Drew Gibson" type="radio" name="q1">Drew Gibson
                 </label>
                 <br>
-                <p>Who is the highest rated female player?</p>
+                <p id="q2">Who is the highest rated female player?</p>
                 <label for="q2-a">
-                    <input id="q2-a" type="radio" name="q2" checked>Paige Pierce
+                    <input id="q2-a" value="Paige Pierce" type="radio" name="q2" checked>Paige Pierce
                 </label>
                 <br>
                 <label for="q2-b">
-                    <input id="q2-b" type="radio" name="q2">Catrina Allen
+                    <input id="q2-b" value="Catrina Allen" type="radio" name="q2">Catrina Allen
                 </label>
                 <br>
                 <label for="q2-c">
-                    <input id="q2-c" type="radio" name="q2">Jessica Weese
+                    <input id="q2-c" value="Jessica Weese" type="radio" name="q2">Jessica Weese
                 </label>
                 <br>
                 <label for="q2-d">
-                    <input id="q2-d" type="radio" name="q2">Sarah Hokom
+                    <input id="q2-d" value="Sarah Hokom" type="radio" name="q2">Sarah Hokom
                 </label>
                 <br>
-                <p>Which pro player is most known for having his start playing ultimate frisbee?</p>
+                <p id="q3">Which pro player is most known for having his start playing ultimate frisbee?</p>
                 <label for="q3-a">
-                    <input id="q3-a" type="radio" name="q3">Jeremy Koling
+                    <input id="q3-a" value="Jeremy Koling" type="radio" name="q3">Jeremy Koling
                 </label>
                 <br>
                 <label for="q3-b">
-                    <input id="q3-b" type="radio" name="q3">Brody Smith
+                    <input id="q3-b" value="Jeremy Koling" type="radio" name="q3">Jeremy Koling
                 </label>
                 <br>
                 <label for="q3-c">
-                    <input id="q3-c" type="radio" name="q3">Calvin Heimburg
+                    <input id="q3-c" value="Calvin Heimburg" type="radio" name="q3">Calvin Heimburg
                 </label>
                 <br>
                 <label for="q3-d">
-                    <input id="q3-d" type="radio" name="q3">Ricky Wysocki
+                    <input id="q3-d" value="Ricky Wysocki" type="radio" name="q3">Ricky Wysocki
                 </label>
-                <p>Which bird is the first name of a famous disc golf pro player?</p>
+                <p id="q4">Which bird is the first name of a famous disc golf pro player?</p>
                 <label for="q4-box">
-                    <input id="q4-box" type="text" name="q4">
+                    <input id="q4-box" placeholder="Answer Here"type="text" name="q4" required>
                 </label>
+                <div id="score"></div>
                 <br>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit-quiz">Submit</button>
             </form>
         </main>
         <footer></footer>

@@ -25,8 +25,9 @@ $(document).ready(function(){
 		},
 		complete: function(){
 			// initialize accordion
-			$("#accordion").accordion();
-			/*
+			// i dont know why this does not work, i have tried many approaches to this
+			//put way too much time into this problem
+			// had to give up for now.
 			$('#accordion').accordion({
 				icons: {
 				  "header": "ui-icon-triangle-1-e",
@@ -38,7 +39,7 @@ $(document).ready(function(){
 			}).css({
 				"marginRight": "900px"
 			});
-			*/
+			
 		}
 	});
 
