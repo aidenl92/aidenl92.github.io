@@ -50,7 +50,8 @@ $(document).ready(function(){
 					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
-						if(userAns[i] == $("#correct-ans").children().eq(i).html()){
+						$("#user-ans").append("<h3>"+userAns[i]+"</h3>");
+						if($("#user-ans").chidlren().eq(i).html() == $("#correct-ans").children().eq(i).html()){
 							score++;
 						}
 						
