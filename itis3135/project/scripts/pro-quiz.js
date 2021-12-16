@@ -52,7 +52,7 @@ $(document).ready(function(){
 					var jArr = JSON.parse(JSON.stringify(userAns));
 					console.log(jArr);
 					for(var i=0; i < userAns.length; i++){
-						if(getJSON(jArr[i]) == getJSON(ansList[i])){
+						if($.getJSON(jArr[i]) == $.getJSON(ansList[i])){
 							score++;
 						}
 						
