@@ -49,7 +49,7 @@ $(document).ready(function(){
 					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
-						if(JSON.stringify(userAns[i]) == JSON.stringify(ansList[i])){
+						if(userAns[i].toString() === ansList[i].toString()){
 							score++;
 						}
 					}
