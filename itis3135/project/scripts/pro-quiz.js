@@ -48,8 +48,8 @@ $(document).ready(function(){
 					console.log(userAns);
 					$("#correct-ans").show();
 					$("#ans-header").show();
-					for(var i=0; i < ansList.length; i++){
-						if(JSON.Stringify(userAns[i]) != JSON.Stringify(ansList[i])){
+					for(var i=0; i < userAns.length; i++){
+						if(userAns[i] != JSON.Stringify(ansList[i])){
 							score--;
 						}
 					}

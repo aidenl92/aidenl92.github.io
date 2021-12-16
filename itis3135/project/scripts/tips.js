@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	
-	$("#accordion").accordion();
 	//get json content through ajax
 	$.ajax({
 		type:"get",
@@ -29,7 +28,6 @@ $(document).ready(function(){
 			// i dont know why this does not work, i have tried many approaches to this
 			//put way too much time into this problem
 			// had to give up for now.
-			$("#accordion").destroy();
 			$('#accordion').accordion({
 				icons: {
 				  "header": "ui-icon-triangle-1-e",
