@@ -51,7 +51,7 @@ $(document).ready(function(){
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
 						$("#user-ans").append("<h3>"+userAns[i]+"</h3>");
-						if($("#user-ans").chidlren().eq(i).html() == $("#correct-ans").children().eq(i).html()){
+						if($("#user-ans").children().eq(i).html() == $("#correct-ans").children().eq(i).html()){
 							score++;
 						}
 						
