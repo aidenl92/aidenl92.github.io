@@ -7,7 +7,7 @@ $(document).ready(function(){
 	 $("#ans-header").hide();
 	
 	$("form").submit(function(e){
-		e.preventDefault();
+
 		var isValid = false; 
 		var q4Ans = $("#q4-box").val().trim();
 		q4Ans = q4Ans.toLowerCase();
@@ -49,7 +49,7 @@ $(document).ready(function(){
 					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
-						if(userAns[i] ===(ansList[i]){
+						if(userAns[i] ===(ansList[i])){
 							score++;
 						}
 					}
@@ -78,6 +78,6 @@ function checkAtoZ(str){
 		
 	}
 	
-	return (validCount == str.length);
+	return (validCount === str.length);
 }
 
