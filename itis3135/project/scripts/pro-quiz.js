@@ -49,10 +49,12 @@ $(document).ready(function(){
 					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
-						if(userAns[i] == JSON.stringify(ansList[i])){
+						if(userAns[i] == $("#correct-ans").children.()eq(i).innerHTML()){
 							score++;
 						}
+						
 					}
+				
 					$("#quiz-score").html("Your score: "+score+" out of 4").show();
 				},
 				error: function(data){
