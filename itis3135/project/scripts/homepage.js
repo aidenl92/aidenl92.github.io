@@ -9,9 +9,11 @@ $(document).ready(function(){
 		'images/overlay-discs.png','images/overlay-courses.png','images/overlay-tips.png','images/overlay-quiz.png'
 	];
 	
+	/*
 	for(var i =0; i <imageList.length; i++){
 		$("#overlay-div").push($("<img>").attr("src",imageList[i]));
 	}
+	*/
 	
 	$(".box").hover(function(){
 		console.log($(this).attr("title"));

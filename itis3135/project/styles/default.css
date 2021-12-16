@@ -192,12 +192,10 @@ table img{
 
 #home-overlay{
 	display: none;
-	positon: fixed;
+
 }
 
-form p b{
-	font-size: 23;
-}
+
 
 .answer-class{
 	color:#FFC300;
