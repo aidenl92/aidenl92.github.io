@@ -48,8 +48,10 @@ $(document).ready(function(){
 							score--;
 						}
 					}
-					$("#quiz-scord").html("Your score: "+score+" out of 4").show();
-				
+					$("#quiz-score").html("Your score: "+score+" out of 4").show();
+				},
+				error: function(data){
+					console.log(JSON.stringify(data)); //this is here so i can see the ajax error
 				}
 			});
 		}
