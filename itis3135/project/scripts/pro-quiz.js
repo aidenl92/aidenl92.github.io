@@ -35,7 +35,7 @@ $(document).ready(function(){
 				success: function(data){
 					var score = 0;
 					$.getJSON("json_files/answer_key.json",function(data){
-						$.each(data,function(){
+						$.each(data,function(data){
 							$.each(this, function(key,val){
 								ansList.push(val.ans);
 								$("#correct-ans").append(
@@ -49,7 +49,7 @@ $(document).ready(function(){
 					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
-						if(userAns[i] === JSON.stringify(ansList[i])){
+						if(userAns[i] ===(ansList[i]){
 							score++;
 						}
 					}
