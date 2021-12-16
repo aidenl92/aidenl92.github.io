@@ -170,12 +170,20 @@ table img{
 	height: auto;
 	padding: 0px;
 	margin: 0px;
+	position: relative;
+	text-align: center;
+}
+
+#disc-ov{
+	position:absolute;
+	bottom: 80px;
 }
 
 .home-img{
 	border-radius: 30px;
 	width: auto;
 	height: 360px;
+
 }
 
 #accordion h3{
