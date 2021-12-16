@@ -57,7 +57,7 @@ $(document).ready(function(){
 							score++;
 						}
 						console.log($("#user-ans h3").eq(i).text());
-						consloe.log($("#correct-ans h3").eq(i).text());
+						console.log($("#correct-ans h3").eq(i).text());
 					}
 					
 					$("#user-ans").hide();
