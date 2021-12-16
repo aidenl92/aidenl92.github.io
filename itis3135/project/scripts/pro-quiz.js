@@ -49,7 +49,7 @@ $(document).ready(function(){
 					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
-						if(userAns[i] == $("#correct-ans").children().eq(i).innerHTML()){
+						if(userAns[i] == $("#correct-ans").children().eq(i).html()){
 							score++;
 						}
 						
