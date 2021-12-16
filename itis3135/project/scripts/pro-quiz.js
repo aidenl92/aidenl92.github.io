@@ -33,7 +33,7 @@ $(document).ready(function(){
 				url:"json_files/answer_key.json",
 				dataType: "json",
 				success: function(data){
-					var score = 4;
+					var score = 0;
 					$.getJSON("json_files/answer_key.json",function(data){
 						$.each(data,function(){
 							$.each(this, function(key,val){
@@ -49,8 +49,8 @@ $(document).ready(function(){
 					$("#correct-ans").show();
 					$("#ans-header").show();
 					for(var i=0; i < userAns.length; i++){
-						if(userAns[i] != JSON.stringify(ansList[i])){
-							score--;
+						if(userAns[i] === JSON.stringify(ansList[i])){
+							score++;
 						}
 					}
 					$("#quiz-score").html("Your score: "+score+" out of 4").show();
@@ -70,7 +70,7 @@ function checkAtoZ(str){
 	alphabet = "abcdefghijklmnopqrstuvwxyz";
 	for(var i=0; i< str.length; i++){
 		for(var j=0; j < alphabet.length; j++){
-			if(str[i] == alphabet[j]){
+			if(str[i] === alphabet[j]){
 				validCount++;
 				break;
 			}

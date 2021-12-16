@@ -7,17 +7,20 @@
 $(document).ready(function(){
 	
 	
-	/*
+	
 	$(".box").hover(function(){
 		console.log($(this).attr("title"));
 		// on hover, create animation with css
 		$(this).animate({
+			opacity: "0.5"
 			
 		});
 	},
 	function(){
-		
+		$(this).animate({
+			opacity: "1"
+			
+		});
 	
 	});
-	*/
 });
