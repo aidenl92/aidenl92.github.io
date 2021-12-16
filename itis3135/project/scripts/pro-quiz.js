@@ -52,7 +52,8 @@ $(document).ready(function(){
 					var jArr = JSON.parse(JSON.stringify(userAns));
 					console.log(jArr);
 					for(var i=0; i < userAns.length; i++){
-						if($.getJSON(jArr[i]) == $.getJSON(ansList[i])){
+						$("#user-ans").append("<h3>"+jArr[i]+"<h3>");
+						if($("#user-ans h3").eq(i).text() == $("#correct-ans h3").eq(i).text()){
 							score++;
 						}
 						
