@@ -1,7 +1,7 @@
 //header and footer script for project pages
 $(document).ready(function(){
     $("header").append(
-        "<h1>Charlotte Chain Chasers</h1>\n" +
+        "<h1>Charlotte Chain Champs</h1>\n" +
         "            <nav class=\"nav-bar\">\n" +
         "                <a href=\"discs.html\">Discs & Gear</a>\n" +
         "                -\n" +

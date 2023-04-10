@@ -1,15 +1,6 @@
-{"answers":[
-	{
-		"ans":"Paul McBeth"
-	},
-	{
-		"ans":"Paige Pierce"
-	},
-	{
-		"ans":"Brody Smith"
-	},
-	{
-		"ans":"Eagle"
-	}
-	
-]}
+{
+	"ans1":"Paul McBeth",
+	"ans2":"Paige Pierce",
+	"ans3":"Brody Smith",
+	"ans4":"Eagle"
+}
