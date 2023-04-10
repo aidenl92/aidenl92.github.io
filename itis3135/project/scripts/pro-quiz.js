@@ -30,7 +30,7 @@ $(document).ready(function(){
 			//ajax
 			$.ajax({
 				type:"get",
-				url:"json_files/answer_key.json",
+				url:"json_files/answer_key_copy.json",
 				dataType: "json",
 				success: function(data){
 					var jStr = "";
